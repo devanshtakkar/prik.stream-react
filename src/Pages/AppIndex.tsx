@@ -9,7 +9,7 @@ export default function AppIndex(){
         <Typography variant="h1">
           How do you want to begin the search?
         </Typography>
-        <Typography variant="body1">With an easy-to-use interface, [App Name] allows you to quickly input your preferences and receive tailored suggestions. Discover movies you might have never found through conventional methods.</Typography>
+        <Typography variant="body1">With an easy-to-use interface, Prik.stream AI allows you to quickly input your preferences and receive tailored suggestions. Discover movies you might have never found through conventional methods.</Typography>
         <Grid
           container
           direction={"column"}

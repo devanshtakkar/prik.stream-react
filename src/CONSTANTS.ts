@@ -1,1 +1,1 @@
-export const BASE_URL = "http://prik.stream"
+export const BASE_URL = "https://prik.stream"

@@ -18,6 +18,9 @@ interface SuggestedMovieCardProps {
 }
 export default function SuggestedMovieCard(props: SuggestedMovieCardProps) {
     let movie = props.movie;
+    if(movie == null){
+        return <></>
+    }
     let [alert, setAlert] = useState<boolean>(false);
     let [alertText, setAlertText] = useState("");
     async function handleFormSubmit(event: FormEvent) {
@@ -26,7 +29,7 @@ export default function SuggestedMovieCard(props: SuggestedMovieCardProps) {
         console.log(form);
         let emailElem = form.elements.item(0) as HTMLInputElement;
         let email = emailElem.value;
-        let nameElem = form.elements.item(0) as HTMLInputElement;
+        let nameElem = form.elements.item(1) as HTMLInputElement;
         let name = nameElem.value;
         try {
             let response = await fetch(`${BASE_URL}/user/movie`, {

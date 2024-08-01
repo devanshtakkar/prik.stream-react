@@ -91,7 +91,7 @@ export default function App() {
                             navigate("/");
                         }}
                     >
-                        AI Movies
+                        Prik Stream
                     </Typography>
                 </Toolbar>
             </AppBar>
